@@ -4,11 +4,13 @@ textarea {
   width: 100%;
   border-radius: 0.5rem;
   border: 1px solid var(--input-stroke);
+  resize: none;
 
   padding: 0.75rem 1rem;
 
   font: var(--text-body-md);
   background: var(--input-base);
+  color: var(--text-body);
 
   margin-bottom: 0.75rem;
 }
@@ -16,11 +18,74 @@ textarea {
 label {
   font: var(--text-body-sm);
   color: var(--text-body);
-
   display: block;
   margin-bottom: 0.75rem;
 }
 
 .address .flex {
   gap: 1rem;
+}
+
+.input-like {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  background: var(--input-base);
+  overflow: hidden;
+}
+
+.input-like label {
+  margin: 0;
+}
+
+.input-like input {
+  display: none;
+}
+
+.option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.option span {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  font: var(--text-body-sm);
+  color: var(--text-body);
+}
+
+.option img {
+  width: 16px;
+  height: 16px;
+}
+
+.input-like input:checked + .option {
+  background: var(--shape-hover);
+}
+
+.input-like input:checked#presencial + .option img {
+  content: url("/assets/icons/building-hover.svg");
+}
+
+.textarea-wrapper ::placeholder {
+  font: var(--input-placeholder);
+}
+
+textarea:focus {
+  border-color: var(--brand-light);
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--brand-light);
+  outline: none;
 }

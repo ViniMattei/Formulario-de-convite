@@ -1,0 +1,69 @@
+.color-picker {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+}
+
+input[type="radio"] {
+  display: none; /* Esconde os inputs de radio */
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid var(--shape-button);
+}
+
+.input:hover {
+  border: 5px solid var(--shape-button);
+}
+
+input[type="radio"]:checked + .color-option {
+  border: 1px solid var(--brand-light); /* Efeito de seleção */
+}
+
+.brand-light {
+  background-color: var(--brand-light);
+}
+
+.navy {
+  background-color: var(--color-navy);
+}
+
+.purple {
+  background-color: var(--color-purple);
+}
+
+.fuschia {
+  background-color: var(--color-fuschia);
+}
+
+.pink {
+  background-color: var(--color-pink);
+}
+
+.feedback-danger {
+  background-color: var(--feedback-danger);
+}
+
+.orange {
+  background-color: var(--color-orange);
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+}
+
+.lime {
+  background-color: var(--color-lime);
+}
+
+.green {
+  background-color: var(--color-green);
+}
+
+.cyan {
+  background-color: var(--color-cyan);
+}

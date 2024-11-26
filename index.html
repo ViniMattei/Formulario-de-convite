@@ -45,6 +45,7 @@
                   placeholder="Nome do evento"
                 />
               </div>
+              
             </fieldset>
 
             <fieldset class="address">
@@ -73,26 +74,98 @@
               </div>
 
               <div class="flex">
-                <div class="input-wrapper flex-2">
-                  <label for="city">Cidade</label>
-                  <input
-                    type="text"
-                    id="city"
-                    name="city"
-                    placeholder="São Paulo"
-                    disabled
-                  />
+                <div class="input-wrapper flex-1">
+                  <label for="tipo">Tipo</label>
+                  <div class="input-like">
+                    <input
+                      type="radio"
+                      id="presencial"
+                      name="tipo"
+                      value="presencial"
+                       checked
+                    />
+                    <label for="presencial" class="option">
+                      <img
+                        src="/assets/icons/building-2.svg"
+                        alt="Presencial"
+                      />
+                      <span>Presencial</span>
+                    </label>
+
+                    <input
+                      type="radio"
+                      id="online"
+                      name="tipo"
+                      value="online"
+                    />
+                    <label for="online" class="option">
+                      <img src="/assets/icons/video.svg" alt="Online" />
+                      <span>Online</span>
+                    </label>
+                  </div>
                 </div>
 
                 <div class="input-wrapper flex-1">
-                  <label for="state">Estado</label>
+                  <label for="local">Local</label>
                   <input
                     type="text"
-                    id="state"
-                    name="state"
+                    id="local"
+                    name="local"
                     disabled
-                    value="SP"
+                    value="Link ou endereço"
                   />
+                </div>
+              </div>
+             
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Descrição</label>
+                <textarea name="medical-info" id="medical-info" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                </textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="child-info">
+              <div class="event">
+                <img src="assets/icons/paintbrush-vertical.svg" alt="Ícone de calendar" />
+                <span>Personalização</span>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="title">Cor principal</label>
+                <div class="color-picker">
+                  <label for="color-brand-light" class="color-option-brand-light"></label>
+                  <input type="radio" name="color" id="color-brand-light" value="brand-light">
+                  
+                  <label for="color-navy" class="color-option navy"></label>
+                  <input type="radio" name="color" id="color-navy" value="navy">
+                  
+                  <label for="color-purple" class="color-option purple"></label>
+                  <input type="radio" name="color" id="color-purple" value="purple">
+                  
+                  <label for="color-fuschia" class="color-option fuschia"></label>
+                  <input type="radio" name="color" id="color-fuschia" value="fuschia">
+                  
+                  <label for="color-pink" class="color-option pink"></label>
+                  <input type="radio" name="color" id="color-pink" value="pink">
+                  
+                  <label for="color-feedback-danger" class="color-option feedback-danger"></label>
+                  <input type="radio" name="color" id="color-feedback-danger" value="feedback-danger">
+                  
+                  <label for="color-orange" class="color-option orange"></label>
+                  <input type="radio" name="color" id="color-orange" value="orange">
+                  
+                  <label for="color-yellow" class="color-option yellow"></label>
+                  <input type="radio" name="color" id="color-yellow" value="yellow">
+                  
+                  <label for="color-lime" class="color-option lime"></label>
+                  <input type="radio" name="color" id="color-lime" value="lime">
+                  
+                  <label for="color-green" class="color-option green"></label>
+                  <input type="radio" name="color" id="color-green" value="green" >
+
+                  <label for="color-cyan" class="color-option cyan"></label>
+                  <input type="radio" name="color" id="color-cyan" value="cyan">
                 </div>
               </div>
             </fieldset>
