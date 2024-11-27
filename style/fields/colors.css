@@ -1,27 +1,24 @@
 .color-picker {
   display: flex;
-
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-input[type="radio"] {
-  display: none; /* Esconde os inputs de radio */
-}
-
-.color-option {
+.color-input {
+  appearance: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 5px solid var(--shape-button);
+  border: 4px solid var(--shape-button);
 }
 
-.input:hover {
-  border: 5px solid var(--shape-button);
+input[type="radio"]:checked {
+  outline: 2px solid var(--brand-light);
 }
 
-input[type="radio"]:checked + .color-option {
-  border: 1px solid var(--brand-light); /* Efeito de seleção */
+input[type="radio"]:hover {
+  outline: 2px solid var(--brand-light);
 }
 
 .brand-light {
@@ -44,7 +41,7 @@ input[type="radio"]:checked + .color-option {
   background-color: var(--color-pink);
 }
 
-.feedback-danger {
+.red {
   background-color: var(--feedback-danger);
 }
 

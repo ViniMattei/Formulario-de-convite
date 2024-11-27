@@ -1,0 +1,45 @@
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.5rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.75rem;
+
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  background-color: var(--shape-button);
+  padding: 4px 4px 8px 4px;
+  position: relative;
+  color: var(--text-heading);
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & .radio-label {
+    margin-bottom: 0px;
+  }
+
+  & input[type="checkbox"]:checked {
+    outline: 2px solid var(--brand-light);
+    border-radius: 4px;
+  }
+
+  & input[type="checkbox"]:hover {
+    outline: 2px solid var(--brand-light);
+    border-radius: 4px;
+  }
+
+  & .radio-image {
+    width: auto;
+    height: 64px;
+    border-radius: 4px;
+  }
+}

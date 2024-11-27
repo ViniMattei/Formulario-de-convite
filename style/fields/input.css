@@ -84,8 +84,3 @@ textarea:focus {
   border-color: var(--brand-light);
   outline: none;
 }
-
-input:focus {
-  border-color: var(--brand-light);
-  outline: none;
-}
