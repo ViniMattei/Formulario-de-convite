@@ -1,0 +1,30 @@
+#switch {
+  position: relative;
+  width: 64px;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: var(--input-stroke) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
