@@ -1,30 +1,59 @@
 #switch {
   position: relative;
   width: 64px;
+  height: 32px;
 }
 
 #switch button {
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   background: var(--input-stroke) no-repeat center;
   border: 0;
   border-radius: 50%;
 
   position: absolute;
-  left: 0;
+
+  left: 2px;
   z-index: 1;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 
   animation: slide-back 0.2s;
 }
 
-#switch span {
+#switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch .btn-span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--input-base);
   border: 1px solid var(--input-stroke);
-  --webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+  --webkit-backdrop-filter: blur(4px);
+  margin: 0;
+}
+
+#switch.active button {
+  left: calc(100% - 22px); /* Move o botão para o lado direito */
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 60%;
+  }
+  to {
+    left: 0;
+  }
 }
