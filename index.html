@@ -364,18 +364,17 @@
               </div>
             </fieldset>
 
-            <fieldset class="">
+            <fieldset class="switch-container">
               <div class="input-wrapper">
                 <label>Estilo</label>
-                <div id="switch">
+                <div id="switch" class="inactive">
                   <button></button>
-                  <span class="btn-span"></span>
+                  <span></span>
                 </div>
-                <label for="switch">Escuro</label>
-
-                <div class="">
-                  <input type="file" name="file" id="file" value="Selecionar" />
-                  <label for="file">Selecionar</label>
+                <label class="mode-label">Escuro</label>
+                <label>Foto de Capa</label>
+                <div class="file-container">
+                  <input class="file" type="file" name="files" id="file" />
                 </div>
               </div>
             </fieldset>
@@ -383,5 +382,6 @@
         </div>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

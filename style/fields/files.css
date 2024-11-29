@@ -1,7 +1,15 @@
+#switch-container,
+#switch,
+#switch button,
+#switch span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #switch {
   position: relative;
   width: 64px;
-  height: 32px;
 }
 
 #switch button {
@@ -12,32 +20,30 @@
   border-radius: 50%;
 
   position: absolute;
-
-  left: 2px;
+  left: 3px;
   z-index: 1;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
 
-  animation: slide-back 0.2s;
+  transition: left 0.2s ease;
 }
 
-#switch button {
-  animation: slide-in 0.2s forwards;
-}
-
-#switch .btn-span {
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--input-base);
   border: 1px solid var(--input-stroke);
+
   border-radius: 9999px;
-  --webkit-backdrop-filter: blur(4px);
-  margin: 0;
+}
+
+#switch.active span {
+  background-color: var(--brand-light);
 }
 
 #switch.active button {
-  left: calc(100% - 22px); /* Move o botão para o lado direito */
+  left: 42px;
 }
 
 @keyframes slide-in {
@@ -45,15 +51,30 @@
     left: 0;
   }
   to {
-    left: 60%;
+    left: 50%;
   }
 }
 
 @keyframes slide-back {
   from {
-    left: 60%;
+    left: 50%;
   }
   to {
     left: 0;
   }
+}
+
+.input-wrapper .mode-label {
+  position: relative;
+  bottom: 20px;
+  left: 80px;
+}
+
+.file-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-container .file {
 }
