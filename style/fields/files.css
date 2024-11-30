@@ -1,3 +1,9 @@
+.settings-container {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+}
+
 #switch-container,
 #switch,
 #switch button,
@@ -70,11 +76,42 @@
   left: 80px;
 }
 
-.file-container {
+.file-upload {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 0.5rem;
 }
 
-.file-container .file {
+.upload-title {
+  color: var(--text-body);
+  font: var(--text-body-sm);
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--shape-button);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0;
+  height: 40px;
+  width: 119px;
+}
+
+.upload-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-name {
+  text-align: center;
+  font: var(--text-body-sm);
+  color: var(--input-placeholder);
 }
