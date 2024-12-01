@@ -77,9 +77,7 @@
 }
 
 .file-upload {
-  display: flex;
-  flex-direction: row;
-  margin-left: 50px;
+  margin-left: 100px;
   gap: 0.5rem;
 }
 
@@ -111,7 +109,6 @@ input[type="file"] {
 }
 
 .file-name {
-  text-align: center;
   font: var(--text-body-sm);
   color: var(--input-placeholder);
 }
