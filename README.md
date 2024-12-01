@@ -38,7 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-um formúlario de covite para suas festas
+um formúlario de covite para suas festas e casamentos
 
 ## 🔖 Layout
 
