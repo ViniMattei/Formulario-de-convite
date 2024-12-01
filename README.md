@@ -20,7 +20,7 @@ Programa exclusivo promovido pela Rocketseat para ensino de tecnologias WEB.
 <br>
 
 <p align="center">
- Formalário de matrícula
+ Formalário de convite
 </p>
 
 <p align="center">
