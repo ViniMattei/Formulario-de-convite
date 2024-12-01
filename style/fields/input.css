@@ -22,6 +22,10 @@ label {
   margin-bottom: 0.75rem;
 }
 
+input[type="text"]:focus {
+  outline: 1px solid var(--brand-light);
+}
+
 .address .flex {
   gap: 1rem;
 }

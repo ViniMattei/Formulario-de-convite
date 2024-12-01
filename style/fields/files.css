@@ -76,39 +76,100 @@
   left: 80px;
 }
 
-.file-upload {
-  margin-left: 100px;
-  gap: 0.5rem;
-}
-
-.upload-title {
+.switchtoggle {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  text-align: left;
   color: var(--text-body);
   font: var(--text-body-sm);
 }
 
-.upload-button {
+.estilo {
+  position: relative;
+}
+
+.frame-parent {
+  align-self: stretch;
+  height: 48px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
-  background-color: var(--shape-button);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 0;
-  height: 40px;
-  width: 119px;
+  justify-content: flex-start;
+  gap: 12px;
+  color: var(--text-heading);
 }
 
-.upload-button svg {
-  width: 16px;
-  height: 16px;
+.frame-child {
+  width: 64px;
+  position: relative;
+  border-radius: 999px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
-input[type="file"] {
-  display: none;
-}
-
-.file-name {
+.fileinput {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  text-align: left;
+  color: var(--text-heading);
   font: var(--text-body-sm);
+}
+
+.text {
+  align-self: stretch;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  color: var(--text-heading);
+}
+
+.label {
+  position: relative;
+}
+
+.upload-icon {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.label1 {
+  position: relative;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 8px;
+  background-color: var(--shape-button);
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  gap: 8px;
+}
+
+.nenhum-arquivo-selecionado {
+  flex: 1;
+  position: relative;
+  font-size: 16px;
   color: var(--input-placeholder);
 }

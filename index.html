@@ -110,8 +110,7 @@
                     type="text"
                     id="local"
                     name="local"
-                    disabled
-                    value="Link ou endereço"
+                    placeholder="Link ou endereço"
                   />
                 </div>
               </div>
@@ -365,19 +364,20 @@
             </fieldset>
 
             <fieldset class="settings-container">
-              <div class="input-wrapper">
-                <label>Estilo</label>
-                <div id="switch" class="inactive">
-                  <button></button>
-                  <span></span>
+              <div class="switchtoggle">
+                <div class="cor-principal">Estilo</div>
+                <div class="frame-parent">
+                  <div id="switch" class="inactive">
+                    <button></button>
+                    <span></span>
+                  </div>
+                  <div class="cor-principal">Escuro</div>
                 </div>
-                <label class="mode-label">Escuro</label>
               </div>
-
-              <div class="file-upload">
-                <div class="input-wrapper">
-                  <label class="upload-title">Foto de capa</label>
-                  <label for="file-input" class="upload-button">
+              <div class="fileinput">
+                <div class="cor-principal">Foto de capa</div>
+                <div class="frame-parent">
+                  <div class="btn">
                     <svg
                       width="16"
                       height="16"
@@ -392,10 +392,11 @@
                         fill="#59B2FF"
                       />
                     </svg>
-                    Selecionar
-                  </label>
-                  <input type="file" id="file-input" />
-                  <span class="file-name">Nenhum arquivo selecionado</span>
+                    <div class="label13">Selecionar</div>
+                  </div>
+                  <div class="nenhum-arquivo-selecionado">
+                    Nenhum arquivo selecionado
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -441,27 +442,43 @@
             </fieldset>
 
             <fieldset class="terms-container">
-              <div class="divider"></div>
-              <div class="checkbox-wrapper">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <label for="checkbox"
-                  >Li e concordo com os <strong>Termos e Condições</strong> e
-                  com a <strong>Política de Privacidade</strong>
-                </label>
-              </div>
-
-              <div class="checkbox-wrapper">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <label for="checkbox"
-                  >Aceito receber atualizações e promoções por e-mail</label
-                >
-              </div>
-
-              <div class="checkbox-wrapper">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <label for="checkbox"
-                  >Aceito receber atualizações e promoções por SMS
-                </label>
+              <div class="footer">
+                <div class="divider"></div>
+                <div class="items">
+                  <div class="checkbox">
+                    <div class="checkbox-item"></div>
+                    <div class="text">
+                      <span class="text-font">Li e concordo com os </span>
+                      <span class="termos-e-condies">Termos e Condições</span>
+                      <span class="text-font"> e com a </span>
+                      <span class="termos-e-condies"
+                        >Política de Privacidade</span
+                      >
+                    </div>
+                  </div>
+                  <div class="checkbox">
+                    <div class="checkbox-item"></div>
+                    <div class="text">
+                      Aceito receber atualizações e promoções por e-mail
+                    </div>
+                  </div>
+                  <div class="checkbox">
+                    <div class="checkbox-item"></div>
+                    <div class="text">
+                      Aceito receber atualizações e promoções por SMS
+                    </div>
+                  </div>
+                </div>
+                <div class="action">
+                  <div class="button">
+                    <img
+                      class="ticket-icon"
+                      alt=""
+                      src="/assets/icons/ticket.svg"
+                    />
+                    <div class="label">Gerar convite</div>
+                  </div>
+                </div>
               </div>
             </fieldset>
           </form>
